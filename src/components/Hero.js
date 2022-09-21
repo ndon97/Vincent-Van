@@ -3,33 +3,35 @@ import {
   LifebuoyIcon,
   NewspaperIcon,
   PhoneIcon,
+  UserIcon,
 } from "@heroicons/react/24/outline";
+
+import Image from "next/image";
+import strongman from "../public/images/strongman.png";
 
 const supportLinks = [
   {
-    name: "Sales",
+    name: "Programs",
     href: "#",
-    description:
-      "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+    description: "Find programs that are easy to follow and track",
     icon: PhoneIcon,
   },
   {
-    name: "Technical Support",
+    name: "Diet",
     href: "#",
-    description:
-      "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
+    description: "Find a diet that you can follow and track easily ",
     icon: LifebuoyIcon,
   },
   {
-    name: "Media Inquiries",
+    name: "Community",
     href: "#",
     description:
-      "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.",
-    icon: NewspaperIcon,
+      "Meet nearby people for classes, working out together to keep motivated ",
+    icon: UserIcon,
   },
 ];
 
-export default function Example() {
+export default function Hero() {
   return (
     <div className="bg-white">
       {/* Header */}
@@ -37,22 +39,20 @@ export default function Example() {
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100"
+            src="https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
             alt=""
           />
           <div
-            className="absolute inset-0 bg-gray-800 mix-blend-multiply"
+            className="absolute inset-0 bg-gray-700 mix-blend-multiply"
             aria-hidden="true"
           />
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
-            Support
+          <h1 className="text-4xl font-bold tracking-tight text-lime-700 md:text-5xl lg:text-6xl">
+            Finding Fit.
           </h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate
-            id malesuada non. Cras aliquet purus dui laoreet diam sed lacus,
-            fames. Dui, amet, nec sit pulvinar.
+            Change your Life Make Fiteness easy
           </p>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function Example() {
               className="flex flex-col rounded-2xl bg-white shadow-xl"
             >
               <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
-                <div className="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-indigo-600 p-5 shadow-lg">
+                <div className="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-lime-700 p-5 shadow-lg">
                   <link.icon
                     className="h-6 w-6 text-white"
                     aria-hidden="true"
@@ -90,7 +90,7 @@ export default function Example() {
                   href={link.href}
                   className="text-base font-medium text-indigo-700 hover:text-indigo-600"
                 >
-                  Contact us<span aria-hidden="true"> &rarr;</span>
+                  Take me there<span aria-hidden="true"> &rarr;</span>
                 </a>
               </div>
             </div>
