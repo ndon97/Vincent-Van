@@ -13,13 +13,6 @@ const people = [
     imageUrl: soundDead,
   },
   {
-    name: "Fan",
-    description: "Installing our roof fan!",
-    cost: "550",
-    email: "janecooper@example.com", // images modal
-    imageUrl: fan,
-  },
-  {
     name: "Sound Deadner",
     description: "Installing sound deadner to limit noise pollution",
     cost: "250",
