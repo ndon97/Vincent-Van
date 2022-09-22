@@ -19,7 +19,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-cyan-500 to-blue-500">
+    <Disclosure as="nav" className="bg-gradient-to-r from-cyan-800 to-blue-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -37,13 +37,15 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Image
-                    className="block h-8 w-auto lg:hidden"
-                    src={van}
-                    alt="Your Company"
-                    width={40}
-                    height={40}
-                  />
+                  <a href="/">
+                    <Image
+                      className="block h-8 w-auto lg:hidden"
+                      src={van}
+                      alt="Your Company"
+                      width={40}
+                      height={40}
+                    />
+                  </a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
