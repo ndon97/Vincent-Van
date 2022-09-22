@@ -3,9 +3,8 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import gym from "../public/images/gym.png";
-import strongman from "../public/images/strongman.png";
 import man from "../public/images/man.png";
+import van from "../public/images/car.png";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -14,17 +13,13 @@ const navigation = [
   { name: "Calendar", href: "#", current: false },
 ];
 
-<a href="https://www.flaticon.com/free-icons/gym" title="gym icons">
-  Gym icons created by Freepik - Flaticon
-</a>;
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-cyan-800 to-blue-900">
+    <Disclosure as="nav" className="bg-gradient-to-r from-cyan-500 to-blue-500">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -44,17 +39,10 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     className="block h-8 w-auto lg:hidden"
-                    src={gym}
+                    src={van}
                     alt="Your Company"
-                    width={20}
-                    height={20}
-                  />
-                  <Image
-                    className="hidden h-8 w-auto lg:block"
-                    src={gym}
-                    alt="Your Company"
-                    width={20}
-                    height={20}
+                    width={40}
+                    height={40}
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
