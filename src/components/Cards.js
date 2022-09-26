@@ -1,5 +1,6 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import { useState } from "react";
 
 import soundDead from "../public/images/soundDead.jpg";
 import fan from "../public/images/fan.jpg";

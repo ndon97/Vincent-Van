@@ -7,8 +7,7 @@ import {
 
 import Image from "next/image";
 import Link from "next/link";
-import background from "../public/images/background.jpeg";
-import van from "../public/images/van.jpg";
+import van from "../public/images/background.jpeg";
 
 const supportLinks = [
   {
@@ -25,7 +24,7 @@ const supportLinks = [
   },
   {
     name: "Updates",
-    href: "#",
+    href: "updates",
     description: "Keep up to date with anything and everything Vincent",
     icon: ArrowPathIcon,
   },
@@ -41,7 +40,7 @@ export default function Hero() {
             className="h-full w-full object-cover bg-contain"
             src={van}
             alt=""
-            height={2000}
+            height={1000}
           />
           <div
             className="absolute inset-0 bg-gray-700 mix-blend-multiply"
