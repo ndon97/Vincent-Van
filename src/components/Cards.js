@@ -22,8 +22,7 @@ const people = [
   },
   // More people...
 ];
-
-export default function Example() {
+export default function Card() {
   return (
     <ul
       role="list"
@@ -58,14 +57,14 @@ export default function Example() {
             <div className="-mt-px flex divide-x divide-gray-200">
               <div className="flex w-0 flex-1">
                 <a
-                  href={`mailto:${person.email}`} // images modal
+                  href="#"
                   className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-400 hover:text-gray-500"
                 >
                   <EnvelopeIcon
                     className="h-5 w-5 text-gray-200"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">Images</span>
+                  <span className="ml-3">More Deatils</span>
                 </a>
               </div>
             </div>
