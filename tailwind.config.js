@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{ts,tsx}",
+    "./public/**/*.html",
+  ],
+
   theme: {
     extend: {},
   },
@@ -8,5 +13,6 @@ module.exports = {
     // ...
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
+    require("flowbite/plugin"),
   ],
 };
