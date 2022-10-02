@@ -21,6 +21,7 @@ const products = [
     imageSrc: van2,
     imageAlt: "",
   },
+
   // More products...
 ];
 

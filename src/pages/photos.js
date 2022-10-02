@@ -17,7 +17,35 @@ const photoCards = [
   {
     id: 2,
     image: van2,
-    title: "putting the fan in",
+    title: "Putting the fan in",
+    description: "Beautiful day working on the fan putting the fan in",
+  },
+  {
+    id: 1,
+    image: van,
+    title: "First Day of Getting the Van",
+    description:
+      "What a joyous day getting the van, the adventure was just beggining",
+  },
+
+  {
+    id: 2,
+    image: van2,
+    title: "Putting the fan in",
+    description: "Beautiful day working on the fan putting the fan in",
+  },
+  {
+    id: 1,
+    image: van,
+    title: "First Day of Getting the Van",
+    description:
+      "What a joyous day getting the van, the adventure was just beggining",
+  },
+
+  {
+    id: 2,
+    image: van2,
+    title: "Putting the fan in",
     description: "Beautiful day working on the fan putting the fan in",
   },
 ];
@@ -30,7 +58,9 @@ const photos = () => {
   return (
     <div className="bg-gray-200">
       <Navbar />
-      <div className="flex justify-center">{cards}</div>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 ml-5 ">
+        {cards}
+      </div>
     </div>
   );
 };

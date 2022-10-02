@@ -29,3 +29,7 @@ a {
     background: #e5e7eb;
   }
 }
+
+.card-img {
+  border-radius: 0.75rem;
+}

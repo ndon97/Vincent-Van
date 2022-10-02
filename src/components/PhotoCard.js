@@ -4,14 +4,20 @@ import van from "../public/images/van.jpg";
 
 export default function PhotoCard(props) {
   return (
-    <div className="max-w-sm mr-3 border-solid border border-black mt-2 rounded">
-      <div className="p-1 rounded-lg">
-        <Image src={props.image} alt="" height={300} width={500}></Image>
+    <div className="max-w-sm mr-3 border-solid border border-black mt-2 rounded-xl bg-teal-700 basis-1/4 shadow-sm">
+      <div className="p-2">
+        <Image
+          src={props.image}
+          alt=""
+          height={300}
+          width={500}
+          className="card-img"
+        ></Image>
       </div>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+      <h5 className="text-2xl font-bold tracking-tight text-teal-200 text-center">
         {props.title}
       </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400 text-center pb-4">
+      <p className="font-normal text-gray-700text-white text-center pb-10 pt-4">
         {props.description}
       </p>
     </div>
