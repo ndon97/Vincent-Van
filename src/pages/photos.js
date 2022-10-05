@@ -58,7 +58,7 @@ const photos = () => {
   return (
     <div className="bg-gray-200">
       <Navbar />
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 ml-5 ">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 ml-5 mr-5 ">
         {cards}
       </div>
     </div>

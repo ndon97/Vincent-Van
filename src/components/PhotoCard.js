@@ -4,7 +4,7 @@ import van from "../public/images/van.jpg";
 
 export default function PhotoCard(props) {
   return (
-    <div className="max-w-sm mr-3 border-solid border border-black mt-2 rounded-xl bg-teal-700 basis-1/4 shadow-sm">
+    <div className="max-w-sm border-solid border border-black mt-2 rounded-xl bg-teal-700 basis-1/4 shadow-sm">
       <div className="p-2">
         <Image
           src={props.image}
