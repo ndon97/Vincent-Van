@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import broken from "../public/images/broken.jpg";
+import van from "../public/images/van.jpg";
 
 export default function Cardlg() {
   return (
